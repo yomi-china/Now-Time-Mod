@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "nowtime",
+	"version": "${version}",
+	"name": "Now Time",
+	"description": "Do you often forget real time because you are immersed in games? This mod will periodically report the time.",
+	"authors": [
+		"Yomi_307"
+	],
+	"contact": {
+		"homepage": "https://yomi-china.github.io/"
+	},
+	"license": "MIT",
+	"icon": "assets/nowtime/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yomi.nowtime.NowTime"
+		]
+	},
+	"mixins": [
+		"nowtime.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.9",
+		"minecraft": "~1.20.1",
+		"java": ">=11",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
